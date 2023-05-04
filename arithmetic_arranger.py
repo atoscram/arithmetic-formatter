@@ -18,7 +18,7 @@ def arithmetic_arranger(problems, display_answer=False):
             ###
             problem = problem.split()
 
-            if problem[1] != "+" == problem[1] != "-":
+            if (problem[1] != "+") == (problem[1] != "-"):
                 return "Error: Operator must be '+' or '-'"
             elif len(problem[0]) > digit_limit or len(problem[2]) > digit_limit:
                 return "Error: Numbers cannot be more than four digits."
